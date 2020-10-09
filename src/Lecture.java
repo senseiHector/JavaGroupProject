@@ -3,6 +3,11 @@ import java.util.HashMap;
 public class Lecture {
     private String lectureId;
     private String name;
+
+    public Lecture(String lectureId, String name) {
+        this.lectureId = lectureId;
+        this.name = name;
+    }
     HashMap<Student, Double> students = new HashMap<>();
 
     void Enter(Student student) {
