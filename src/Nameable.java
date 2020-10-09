@@ -1,3 +1,3 @@
-public interface Nameable<T> {
-    T getName();
+public interface Nameable {
+    String getName();
 }
