@@ -1,6 +1,6 @@
 public class NaughtyStudent extends Student{
     @Override
-    double getAverageGrades(){
+    public double getAverageGrades(){
         return 0;
     }
 }
