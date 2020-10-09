@@ -8,9 +8,6 @@ public class Student implements HasLevel, Nameable{
     private List<Double> studentGrades;
     public double totalGrade;
 
-    public Student() {
-    }
-
     public Student(String studentName,  Level studentLevel, List<Double> studentGrades) {
         this.studentName = studentName;
         this.studentLevel = studentLevel;
