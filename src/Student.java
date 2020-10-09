@@ -17,7 +17,7 @@ public class Student {
 
     }
 
-    public String getStudentName() {
+    public String getName() {
 
         return studentName;
     }
@@ -37,5 +37,4 @@ public class Student {
     public double getAverageGrades(){
         return getTotalGrades()/studentGrades.size();
     }
-
 }
