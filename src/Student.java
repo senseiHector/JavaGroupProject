@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Student {
+public class Student implements HasLevel, Nameable{
     //Declaring variables
     private String studentName;
     private Level studentLevel;
@@ -17,11 +17,13 @@ public class Student {
 
     }
 
+    @Override
     public String getName() {
 
         return studentName;
     }
 
+    @Override
     public Level getLevel() {
         return studentLevel;
     }
