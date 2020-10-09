@@ -8,6 +8,11 @@ public class Student implements HasLevel, Nameable{
     private List<Double> studentGrades;
     public double totalGrade;
 
+    public Student() {
+        studentLevel = null;
+        studentGrades = null;
+        studentName = null;
+    }
     public Student(String studentName,  Level studentLevel, List<Double> studentGrades) {
         this.studentName = studentName;
         this.studentLevel = studentLevel;
@@ -33,6 +38,13 @@ public class Student implements HasLevel, Nameable{
         return studentLevel;
     }
 
+    public void printGrade() {
+        PrintStream ps = new PrintStream(System.out);
+        for(double grade : studentGrades) {
+            ps.print(grade);
+            ps.println();;
+        }
+    }
 
     public double getTotalGrades() {
         totalGrade = 0;
