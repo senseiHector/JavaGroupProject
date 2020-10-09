@@ -31,7 +31,7 @@ public class Register {
 
     public Student getStudentByName(String name) throws StudentNotFoundException{
         boolean found = false;
-        Student foundStudent = new Student();
+        Student foundStudent = new Student("",Level.LEVEL_100,new ArrayList<>());
         for (Nameable student : list_of_students){
             if(student.getName().equals(name)){
                 found = true;
