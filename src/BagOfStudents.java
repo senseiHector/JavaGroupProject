@@ -1,14 +1,14 @@
 import java.util.LinkedList;
 
-public class BagOfSudents {
+public class BagOfStudents {
 
     private LinkedList<Student> bag= new LinkedList<>();
 
     public void add(Student student){
-        add(student);
+        bag.add(student);
     }
     public void remove(Student student){
-        add(student);
+        bag.remove(student);
     }
 
     public void clear(){
