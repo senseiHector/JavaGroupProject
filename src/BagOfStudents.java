@@ -1,9 +1,9 @@
 import java.util.HashSet;
 
-public class BagOfSudents {
+public class BagOfStudents {
     private HashSet<Student> bag;
 
-    public BagOfSudents(){
+    public BagOfStudents(){
         bag = new HashSet<>();
     }
 

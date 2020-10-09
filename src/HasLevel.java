@@ -1,3 +1,3 @@
 public interface HasLevel {
-    int getLevel();
+    public Level getLevel();
 }

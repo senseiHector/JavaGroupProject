@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Student {
+public class Student implements Nameable,HasLevel {
     //Declaring variables
     private String studentName;
     private Level studentLevel;
