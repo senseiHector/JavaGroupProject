@@ -14,7 +14,7 @@ public class Lecture {
         students.put(student,student.getAverageGrades());
     }
 
-    double highestAverageGrade() {
+    double getHighestAverageGrade() {
         double grade = 0;
         for (Student i : students.keySet())
             grade += students.get(i);

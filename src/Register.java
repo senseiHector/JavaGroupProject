@@ -3,6 +3,7 @@ import java.util.List;
 import  java.util.Collections;
 
 public class Register {
+
     private List <Student> list_of_students;
 
     public Register(List<Student> list){
@@ -29,7 +30,7 @@ public class Register {
         Comparator<Student> comp = new Comparator<Student>() {
             @Override
             public int compare(Student student1, Student student2) {
-                if (student1.getName() > student2.getName())
+                if (student1.getName().equals(student2.getName()))
                     return 1;
                 else
                     return 0;
