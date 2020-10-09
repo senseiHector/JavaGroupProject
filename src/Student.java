@@ -1,4 +1,5 @@
 import java.util.List;
+import java.io.*;
 
 public class Student implements HasLevel, Nameable{
     //Declaring variables
@@ -21,6 +22,13 @@ public class Student implements HasLevel, Nameable{
     public String getName() {
 
         return studentName;
+    }
+    public void getGrade() {
+
+        try (PrintStream pw = new PrintStream(System.out, true)) {
+            for (double d : studentGrades)
+                pw.println(d);
+        }
     }
 
     @Override
