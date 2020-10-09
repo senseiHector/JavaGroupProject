@@ -52,10 +52,7 @@ public class Register {
         Comparator<Student> comp = new Comparator<>() {
             @Override
             public int compare(Student student1, Student student2) {
-                if (student1.getName() > student2.getName())
-                    return 1;
-                else
-                    return 0;
+                return  student1.getName().compareTo(student2.getName());
             }
         };
         List<Student> studentList = new ArrayList<>();
