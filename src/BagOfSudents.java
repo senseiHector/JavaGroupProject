@@ -1,21 +1,19 @@
-import java.util.HashSet;
+import java.util.LinkedList;
 
 public class BagOfSudents {
-    private HashSet<Student> bag;
 
-    public BagOfSudents(){
-        bag = new HashSet<>();
-    }
+    private LinkedList<Student> bag= new LinkedList<>();
 
-    public boolean add(Student student){
-        return false;
+    public void add(Student student){
+        add(student);
     }
-    public boolean remove(Student student){
-        return false;
+    public void remove(Student student){
+        add(student);
     }
 
     public void clear(){
-
+        for(Student student : bag)
+            bag.remove(student);
     }
 
 }

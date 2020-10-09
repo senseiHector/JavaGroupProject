@@ -1,8 +1,8 @@
-import java.util.HashSet;
+import java.util.LinkedList;
 
 public class Bag<T> {
 
-    private HashSet<T> bag = new HashSet<>();
+    private LinkedList<T> bag = new LinkedList<>();
 
     public void add(T person){
         bag.add(person);
