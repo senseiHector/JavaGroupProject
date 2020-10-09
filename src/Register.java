@@ -29,10 +29,7 @@ public class Register {
         Comparator<Student> comp = new Comparator<Student>() {
             @Override
             public int compare(Student student1, Student student2) {
-                if (student1.getName() > student2.getName())
-                    return 1;
-                else
-                    return 0;
+                return  (Integer.valueOf(student1.getName()) > Integer.valueOf(student2.getName()));
             }
         };
         Collections.sort(this.list_of_students,comp);
